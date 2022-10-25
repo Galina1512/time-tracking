@@ -10,12 +10,11 @@ function HandlerMonthly() {
 {data.map((item,index) =>{
   const {title, timeframes, colorit, image} = item;
   const divStyle = {
-    backgroundColor: {colorit}
+    backgroundColor: `${colorit}`
   }
 
   return(
   <div className='substrate' key={index} style = { divStyle } >    
-    {/* <div className='substrate'key={index} style= {'backgrounColor = {colorit}'}> */}
       <img src={image} alt='pic'/>
 
     <div className='card'>

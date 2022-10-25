@@ -10,14 +10,16 @@ function HandlerWeekly() {
 {data.map((item, index) =>{
   const {title, timeframes, colorit, image} = item;
   const divStyle = {
-    backgroundColor: {colorit}
+    backgroundColor: `${colorit}`
   }
-  console.log(colorit)
   return(
-    <div className='substrate' key={index} style= {divStyle} >
-      <img src={image} alt='pic'/>
+  <div className='substrate' key={index} style= {divStyle}>
+    <div className='pic'>      
+      <img src = {image} alt='pic' />
+    </div>
 
-    <div className='card' style= {divStyle}>
+
+    <div className='card'>
     <div className='card-title'>
       <h3>{title}</h3>
       <img src={ellips} alt='pict'/>

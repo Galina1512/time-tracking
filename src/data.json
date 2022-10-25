@@ -1,9 +1,9 @@
 [
   {
     "title": "Work",
-    "colorit": "#ff8c66",
-    "colorit1": "hsl (15, 100%, 70%)",
-    "image": "./images/icon-work.svg",
+    "colorit": "hsl(15, 100%, 70%)",
+    "image": "./icon-work.svg",
+
     "timeframes": {
       "daily": {
         "current": 5,
@@ -21,10 +21,8 @@
   },
   {
     "title": "Play",
-    "colorit": {"rgb": [86, 194, 230]},
-
-    "colorit1": "hsl(195, 74%, 62%)",
-    "image": "./images/icon-play.svg",
+    "colorit": "hsl(195, 74%, 62%)",
+    "image": "./icon-play.svg",
 
     "timeframes": {
       "daily": {
@@ -43,10 +41,9 @@
   },
   {
     "title": "Study",
-    "colorit": {"rgb": [255, 92, 124]},
+    "colorit": "hsl(348, 100%, 68%)",
+    "image": "./icon-study.svg",
 
-    "colorit1": "hsl(348, 100%, 68%)",
-    "image": "./images/icon-study.svg",
     "timeframes": {
       "daily": {
         "current": 0,
@@ -64,10 +61,9 @@
   },
   {
     "title": "Exercise",
-    "colorit": {"rgb": [74, 207, 129]},
+    "colorit": "hsl(145, 58%, 55%)",
+    "image": "./icon-exercise.svg",
 
-    "colorit1": "hsl(145, 58%, 55%)",
-    "image": "./images/icon-exercise.svg",
     "timeframes": {
       "daily": {
         "current": 1,
@@ -85,10 +81,8 @@
   },
   {
     "title": "Social",
-    "colorit": {"rgb": [117, 54, 211]},
-
-    "colorit1": "hsl(264, 64%, 52%)",
-    "image": "./images/icon-social.svg",
+    "colorit": "hsl(264, 64%, 52%)",
+    "image": "./icon-social.svg",
 
     "timeframes": {
       "daily": {
@@ -107,10 +101,8 @@
   },
   {
     "title": "Self Care",
-    "colorit": {"rgb": [241, 198, 91]},
-
-    "colorit1": "hsl(43, 84%, 65%)",
-    "image": "./images/icon-self-care.svg",
+    "colorit": "hsl(43, 84%, 65%)",
+    "image": "./icon-self-care.svg",
 
     "timeframes": {
       "daily": {
