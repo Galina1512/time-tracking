@@ -18,7 +18,6 @@ function HandlerWeekly() {
       <img src = {image} alt='pic' />
     </div>
 
-
     <div className='card'>
     <div className='card-title'>
       <h3>{title}</h3>
