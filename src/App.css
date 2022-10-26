@@ -13,14 +13,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70vw;
+  width: 1440px;
   height: 100vh;
   background-color: hsl(226, 43%, 10%);
 }
 .main{
   display: flex;
   width: 80%;
-  height: 50%;
+  height: 530px;
   justify-content: center;
   align-items: center;
   background-color: hsl(226, 43%, 10%);
@@ -36,12 +36,10 @@ body{
   justify-content: flex-start;
   background-color: hsl(235, 46%, 20%);
   color: white;
-  width: 22%;
+  width: 250px;
   height: 100%;
   color: white;
-  margin: 0 10px;
-  margin: 5px;
-
+  margin: 0 5px;
   border-radius: 15px;
 
 }
@@ -49,8 +47,7 @@ body{
   background-color: hsl(236, 62%, 60%);
   border-radius: 15px;
   height: 70%;
-  padding-left: 20px;
-
+  padding: 20px 0 0 30px;
 }
 .yourname{
   display: flex;
@@ -62,18 +59,18 @@ body{
   font-weight: 200;
 }
 .yourname p{
-  font-size: 12px;
+  font-size: 18px;
 
 }
 .yourname h3{
-  font-size: 30px;
+  font-size: 34px;
   margin:10px  0;
 }
 .portret{
   width: 60px;
   border: 2px solid white;
   border-radius: 50%;
-  margin-top: 20px;
+  margin: 10px 0 30px;
 }
 .mymenu{
   display: flex;
@@ -88,7 +85,7 @@ border: none;
 background-color: hsl(235, 46%, 20%);
 color: hsl(236, 100%, 87%);
 padding-left: 20px;
-
+font-size: 18px;
 }
 .btn:hover{
   color: white;
@@ -116,28 +113,30 @@ padding-left: 20px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 170px;
-  height: 170px ;
+  width: 250px;
+  height: 250px ;
   border-radius: 15px;
   margin: 10px 10px 15px;
-  position: relative;
 }
 .pic{
+  height: 20%;
   align-self: flex-end;
   }
   .card{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 150px;
-  height: 120px;
+  width: 210px;
+  height: 170px;
   background-color: rgb(28, 31, 74);
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
-  margin: 10px 10px 15px;
-  position: absolute;
-  top: 30px;
 }
+.card:hover{
+  cursor: pointer;
+  background-color: rgb(42, 47, 118);
+ }
+
 .card-title{
   display: flex;
   justify-content: space-between;
@@ -156,14 +155,14 @@ padding-left: 20px;
   margin: 10px 0;
 }
 .card h4{
-  font-size: 12px;
+  font-size: 14px;
   color: hsl(236, 100%, 87%);
 
 }
 .card h3{
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
-font-size: 14px;
+font-size: 18px;
 }
 
 @media all and (max-width:450px) {
@@ -180,7 +179,7 @@ font-size: 14px;
     height: fit-content;
   }
   .leftblock {
-    width: 90%;
+    width: 80%;
     height: 25vh;
 
   }

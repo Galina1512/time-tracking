@@ -15,8 +15,8 @@ function HandlerDaily() {
 
   return(
     <div className='substrate' key={index} style={divStyle}>    
-    <div className='pic'>      
-      <img src={image} alt='pic'/>
+      <div className='pic'>      
+        <img src={image} alt='pic'/>
       </div>
     <div className='card'>
       <div className='card-title'>
