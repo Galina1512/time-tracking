@@ -8,25 +8,42 @@ import portret from './image-jeremy.png';
 function App() {
 
     const [isDaily, setIsDaily] = useState(false);
-    const [isWeekly, setIsWeekly] = useState(false);
+    const [isWeekly, setIsWeekly] = useState(true);
     const [isMonth, setIsMonth] = useState(false);
 
+    const [activeBtn1, setActiveBtn1] = useState(false);
+    const [activeBtn2, setActiveBtn2] = useState(true);
+    const [activeBtn3, setActiveBtn3] = useState(false);
+  
+
     function weeks() {
-      {setIsWeekly(!isWeekly)}; 
-      {setIsDaily(false)};
-      { setIsMonth(false)};
+      setIsWeekly(true); 
+      setIsDaily(false);
+      setIsMonth(false);
+      setActiveBtn1(false);
+      setActiveBtn2(true);
+      setActiveBtn3(false);
+  
       }
 
       function days(){
-        {setIsDaily(!isDaily)};
-        {setIsWeekly(true)}; 
-        { setIsMonth(false)};
+        setIsDaily(true);
+        setIsWeekly(false); 
+        setIsMonth(false);
+        setActiveBtn1(true);
+        setActiveBtn2(false);
+        setActiveBtn3(false);
+    
         }
      
       function months(){
-        { setIsMonth(!isMonth)};
-        {setIsDaily(false)};
-        {setIsWeekly(true)}; 
+        setIsMonth(true);
+        setIsDaily(false);
+        setIsWeekly(false);
+        setActiveBtn1(false);
+        setActiveBtn2(false);
+        setActiveBtn3(true);
+     
         }
   
 
@@ -45,9 +62,9 @@ function App() {
       </div>
 
       <div className='mymenu'>
-        <button onClick={ days } className="btn" >Daily</button>
-        <button onClick={ weeks } className="btn" >Weekly</button>
-        <button onClick = { months } className="btn">Monthly</button>
+        <button onClick={ days } className={activeBtn1 ? " btn1 active" : "btn1"}  >Daily</button>
+        <button onClick={ weeks } className={activeBtn2 ?  " btn2 active" : "btn2"}  >Weekly</button>
+        <button onClick = { months } className={activeBtn3 ? " btn3 active" : "btn3"} >Monthly</button>
       </div>
 
     </header>
@@ -58,7 +75,7 @@ function App() {
     </div>
 
     <div className={isWeekly ? 'isWeekly' : null} >
-      {isWeekly ? null :<HandlerWeekly/>}
+      {isWeekly ? <HandlerWeekly/> : null}
     </div>
 
     <div className={isMonth ? 'isMonth' : null} >

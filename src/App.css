@@ -80,15 +80,24 @@ body{
   height: 30%;
 
 }
-.btn{
+.btn1, .btn2, .btn3{
 border: none;
 background-color: hsl(235, 46%, 20%);
 color: hsl(236, 100%, 87%);
 padding-left: 20px;
 font-size: 18px;
 }
-.btn:hover{
+
+.btn1.active, .btn2.active, .btn3.active{
+  border: none;
+  background-color: hsl(235, 46%, 20%);
   color: white;
+  padding-left: 20px;
+  font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover{
+  /* color: white; */
   cursor: pointer;
 }
 
